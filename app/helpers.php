@@ -894,6 +894,9 @@ if (!function_exists('checkFeature')){
         if ($partName == 'password' && !$currentPlan->planFeature->password) {
             return false;
         }
+        if ($partName == 'emergency_data' && !$currentPlan->planFeature->emergency_data) {
+            return false;
+        }
 
         if ($partName == 'advanced') {
             $feature = $currentPlan->planFeature;

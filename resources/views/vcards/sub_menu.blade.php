@@ -167,7 +167,7 @@
         <a class="nav-link-1 nav-link p-3 {{ isset($partName) && $partName == 'emergency' ? 'active' : '' }}"
             href="{{ route('vcards.edit', $vcard->id) . '?part=emergency' }}">
             <i class="fa-solid fa-triangle-exclamation p-1 icon-color-bs-red"></i>
-            {{ __('messages.vcard.emergency_data') ?? 'Datos de Emergencia' }}
+            {{ __('Datos de Emergencia') ?? 'Datos de Emergencia' }}
         </a>
     </li>
 @endif
